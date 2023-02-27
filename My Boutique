@@ -1,0 +1,29 @@
+Creat a clothing store database
+
+/**My Boutique:
+Sun Dresses (31) 15.98
+Mini Skirts (17) 10.98
+Denim Shorts (51) 8.98
+Graphic Tees (21) 5.98
+Distressed Jeans (24) 20.98
+**/
+
+CREATE TABLE My_Boutique (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, cost INTEGER );
+
+INSERT INTO My_Boutique VALUES (1, "Sun Dresses", 31, 15.98);
+INSERT INTO My_Boutique VALUES (2, "Mini Skirts", 17, 10.98);
+INSERT INTO My_Boutique VALUES (3, "Denim Shorts", 51, 8.98);
+INSERT INTO My_Boutique VALUES (4, "Graphic Tees", 21, 5.98);
+INSERT INTO My_Boutique VALUES (5, "Distressed Jeans", 24, 20.98);
+
+Display the database by ID number
+
+SELECT * FROM My_Boutique 
+
+Sort by cost 
+
+ORDER BY cost asc;
+
+Show total items in currently in stick
+
+SELECT SUM(current_quantity) FROM My_Boutique;
